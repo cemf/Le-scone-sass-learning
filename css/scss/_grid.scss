@@ -1,0 +1,31 @@
+// variaveis do Grid
+$cols:12;
+$gutter:20px;
+$l-device:1200px;
+$m-device:760px;
+$s-device:480px;
+
+// Box-sizing
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.container{
+    width:1200px;
+    margin:0 auto;
+    &::after, &::before{
+        content: '';
+        display: table;
+        clear:both;
+    }
+}
+
